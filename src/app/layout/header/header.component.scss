@@ -24,7 +24,8 @@
   .header-img {
     width: 600px;
     height: 160px;
-    background-image: url(/assets/images/wave.png);
+    /*background-image: url(assets/images/wave.png);*/
+    background-image: url("/assets/images/wave.png");
     background-repeat: no-repeat;
     background-size: cover;
 
