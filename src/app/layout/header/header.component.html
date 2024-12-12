@@ -1,0 +1,58 @@
+<header>
+  <div class="header-container">
+    <div class="header-images">
+      <span class="header-img"></span>
+      <span class="header-img header-img_recover"></span>
+    </div>
+    <div class="header-content">
+      <div class="header-logo">
+        <img alt="logo" class="logo" src="/assets/svg/logo.svg" />
+      </div>
+      <h1 class="header-title">
+        Волжский Государственный <br /> Университет Водного Транспорта
+      </h1>
+      <div class="header-contacts">
+        <span>Деканат: <a href="tel:+798864502045">+798864502045</a> </span>
+        <span>Почта: <a href="mailto:info@ieup.ru">info&commat;ieup.ru</a></span>
+        <span>Сведения об образовательной организации</span>
+      </div>
+    </div>
+  </div>
+
+
+  <nav class="header-menu">
+    <a [routerLink]="['/']" mat-button>Главная</a>
+    <a [routerLink]="['/about']" mat-button>Об университете</a>
+    <button [matMenuTriggerFor]="studentMenu" mat-button>Для студентов</button>
+    <button [matMenuTriggerFor]="forEntrants" mat-button>Для поступающих</button>
+    <button [matMenuTriggerFor]="forWorkers" mat-button>Для работников</button>
+  </nav>
+</header>
+
+<mat-menu #studentMenu='matMenu'>
+  <button disabled mat-menu-item>Информация о направлениях</button>
+  <button disabled mat-menu-item>Стипендии и меры поддержки</button>
+  <button disabled mat-menu-item>Организация питания</button>
+  <button disabled mat-menu-item>Центр содействия трудоустройству</button>
+  <button disabled mat-menu-item>Квитанции на оплату</button>
+  <button disabled mat-menu-item>Аспирантура</button>
+  <button disabled mat-menu-item>Магистратура</button>
+  <button disabled mat-menu-item>Дистанционное обучение</button>
+  <button mat-menu-item>Расписание</button>
+</mat-menu>
+
+<mat-menu #forEntrants='matMenu'>
+  <button disabled mat-menu-item>Информация о направлениях</button>
+  <button disabled mat-menu-item>Платные образовательные услуги</button>
+  <button disabled mat-menu-item>Вакантные места для приема и перевода обучающихся</button>
+  <button disabled mat-menu-item>Приемная кампания</button>
+  <button disabled mat-menu-item>Дополнительное образование и профессиональное обучение</button>
+  <button disabled mat-menu-item>Абитуриентам и поступающим</button>
+</mat-menu>
+
+<mat-menu #forWorkers='matMenu'>
+  <button disabled mat-menu-item>Финансовая деятельность и хозяйственная деятельность</button>
+  <button disabled mat-menu-item>Расписание</button>
+  <button disabled mat-menu-item>Вакансии</button>
+  <button disabled mat-menu-item>Преподователям и сотрудникам</button>
+</mat-menu>

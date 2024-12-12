@@ -1,0 +1,8 @@
+<div class="home-page">
+  @for (news of mockNews; track news.id) {
+    <div class="home-page__item">
+      <img class="home-page__img" [src]="news.image" alt="news.title">
+      <span class="home-page__description">{{ news.description }}</span>
+    </div>
+  }
+</div>
