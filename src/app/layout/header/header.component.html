@@ -38,7 +38,7 @@
   <button disabled mat-menu-item>Аспирантура</button>
   <button disabled mat-menu-item>Магистратура</button>
   <button disabled mat-menu-item>Дистанционное обучение</button>
-  <button mat-menu-item>Расписание</button>
+  <button [routerLink]="['/schedule']" mat-menu-item>Расписание</button>
 </mat-menu>
 
 <mat-menu #forEntrants='matMenu'>

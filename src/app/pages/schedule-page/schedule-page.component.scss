@@ -1,0 +1,67 @@
+.schedule-page__header {
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+  padding: 20px 60px;
+  border-radius: 0 0 4px 4px;
+  background-color: #008AED;
+  gap: 20px;
+
+  input {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+  }
+}
+
+.schedule-page__content {
+  width: 100%;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: separate;
+
+  tbody {
+    border-color: black;
+  }
+
+  th {
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    cursor: default;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+    background: #6DB1FF;
+    box-shadow: 0 0.3125rem rgba(237, 237, 237, 0);
+    block-size: 3.5rem;
+    filter: opacity(1);
+  }
+
+  td {
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #000000;
+    background: #FFFFFF;
+    block-size: 2.5rem;
+    inline-size: 0.3125rem;
+    border-block-start: none;
+    filter: opacity(1);
+  }
+}
+
+.schedule-page__cell {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 4px;
+}
+
+.schedule-page__cell-text {
+  padding: 1rem;
+  background-color: #D9D9D9;
+}
